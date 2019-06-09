@@ -1,0 +1,32 @@
+.login{
+	background-color: #6d4b70;
+	height: 50px;
+	color: white;
+	padding: 10px;
+}
+.bgimage{
+	background-image: url('http://urbanclassicsautorepair.com/wp-content/uploads/2012/11/DB10800_3.jpg');
+	background-size: cover;
+}
+.center{
+	margin-top: 7.9%;
+	margin-bottom: 8%;
+}
+.btn{
+	background-color: #6d4b70;
+	color: white;
+}
+.bg{
+	background-color: black;
+}
+.mr{
+	margin-right: 120px;
+	border-bottom: 4px solid blue;
+}
+.cursive {
+	font-family: cursive;
+	margin-left: 110px;
+}
+.link:hover {
+	color: blue;
+}
