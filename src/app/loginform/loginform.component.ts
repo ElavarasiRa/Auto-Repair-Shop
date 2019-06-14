@@ -28,7 +28,7 @@ userData(value){
 				console.log('home');
 				break;
 				}else{
-				this.router.navigate(["/header"]);
+				this.router.navigate(["/vehicle-owner-details"]);
 				console.log('home');
 				break;
 				}

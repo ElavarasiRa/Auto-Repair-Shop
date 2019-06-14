@@ -14,6 +14,7 @@ import { SignupformComponent } from './signupform/signupform.component';
 import { LoginformComponent } from './loginform/loginform.component';
 import { AgmCoreModule } from '@agm/core';
 import { MapshowComponent } from './mapshow/mapshow.component';
+import { VehicleOwnerDetailsComponent } from './vehicle-owner-details/vehicle-owner-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MapshowComponent } from './mapshow/mapshow.component';
     UserComponent,
     SignupformComponent,
     LoginformComponent,
-    MapshowComponent
+    MapshowComponent,
+    VehicleOwnerDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,11 +40,12 @@ import { MapshowComponent } from './mapshow/mapshow.component';
     {path:'',pathMatch:'full',redirectTo:'header'},
     {path:'header',component:HeaderComponent},
     {path:'signup',component:SignupComponent},
+    {path:'signupform',component:SignupformComponent},
     {path:'login',component:LoginComponent},
     {path:'loginform',component:LoginformComponent},
-    {path:'signupform',component:SignupformComponent},
     {path:'user',component:UserComponent},
     {path:'mapshow',component:MapshowComponent},
+    {path:'vehicle-owner-details',component:VehicleOwnerDetailsComponent},
 
 
     ])

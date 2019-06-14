@@ -14,9 +14,12 @@ export class UserComponent implements OnInit {
   ngOnInit() {
   }
  
-sendData(value){
-	
-}
+sendDetails(value){ 
+  this.data.senddetails(value).subscribe(res=>{
+  console.log(res)
+   })
+ }
+
 
  change(value){
   this.see = value;

@@ -20,4 +20,10 @@ export class ServiceService {
   return this.http.get('https://5cc099c282ec6a00149f3dae.mockapi.io/api/v1/usersignup')
   .pipe(map(data=>this.getData=data.json()))
   }
+
+  senddetails(value){
+  console.log(value);
+  return this.http.post('https://5cc099c282ec6a00149f3dae.mockapi.io/api/v1/vehicleOwnerDetails',value)
+  .pipe(map(data=>this.firstData=data.json()))
+  }
 }

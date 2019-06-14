@@ -8,15 +8,15 @@
       <ul class="navbar-nav ml-auto">
         
         <li class="nav-item">
-          <a class="nav-link navbar-brand" routerLink="/header"><span class="link">Home</span></a>
+          <a class="nav-link navbar-brand" routerLink="/header"><span class="link"><b>Home</b></span></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link navbar-brand" routerLink="/login"><span class="link">Log in</span></a>
+          <a class="nav-link navbar-brand" routerLink="/login"><span class="link"><b>Log in</b></span></a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link navbar-brand mr" routerLink="/signup"><span class="link">Sign up</span></a>
+          <a class="nav-link navbar-brand mr" routerLink="/signup"><span class="link"><b>Sign up</b></span></a>
         </li>
 
       </ul>
@@ -24,15 +24,18 @@
 </nav>
 </div>
 
-<div class="container-fluid bgimage">
+<div class="container-fluid">
 	<div class="row">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-4 col-md-12 col-sm-12 top">
-			<div class="card p-4" style="width:350px;">
+		<div class="col-lg-4 col-md-3">
+			<!-- <img src="https://cdn.websites.hibu.com/b7e2809425ac4644a1ada2107d1abcd6/dms3rep/multi/mobile/logo-image-847bd6e1.png" alt="shop" class="gallery img-fluid"> -->
+		</div>
+
+		<div class="col-lg-4 col-md-6 col-sm-12 top text-center">
+			<div class="card p-4" style="width:100%;">
 				<p class="text-center"><b>Create a New Account</b></p>
 				<form #myForm='ngForm' name="myForm" (ngSubmit)='sendData(myForm.value)'>
 					<div class="form-group">
-						<input #name='ngModel' ngModel  name="name" required minlength="3" type="text" placeholder="Name" class="form-control" />
+						<input #name='ngModel' ngModel  name="name" required minlength="3" type="text" placeholder="Name" class="form-control text-capitalize" />
 						<div *ngIf="name.errors && (name.touched|| name.dirty)" class="alert text-danger">
                             <div style="font-size:15px;margin:-10px;" [hidden]="!name.errors.required">
                                 Username requried
@@ -92,7 +95,7 @@
 
 			    	<div *ngIf="show==0">
 				    	<div class="form-group">
-							<input id="vehicle1" #vehicle1='ngModel' ngModel name="vehicle1" type="text" placeholder="Vehicle Type 1" required class="form-control" />
+							<input id="vehicle1" #vehicle1='ngModel' ngModel name="vehicle1" type="text" placeholder="Vehicle Type 1" required class="form-control text-capitalize" />
 							<div *ngIf="vehicle1.errors && (vehicle1.touched|| vehicle1.dirty)" class="alert text-danger">
 								<div style="font-size:15px;margin:-10px;" [hidden]="!vehicle1.errors.required">
                                Vehicle Type is required
@@ -101,13 +104,13 @@
 				    	</div>
 
 				    	<div class="form-group">
-							<input id="vehicle2" #vehicle2='ngModel' ngModel name="vehicle2" type="text" placeholder="Vehicle Type 2(optional)" class="form-control" />
+							<input id="vehicle2" #vehicle2='ngModel' ngModel name="vehicle2" type="text" placeholder="Vehicle Type 2(optional)" class="form-control text-capitalize" />
 				    	</div>
 				    </div>
 
 				    <div *ngIf="show==1">
 				    	<div class="form-group">
-							<input id="address" #address='ngModel' ngModel name="address" type="text" placeholder="Shop 1: Address" required class="form-control" />
+							<input id="address" #address='ngModel' ngModel name="address" type="text" placeholder="Shop 1: Address" required class="form-control text-capitalize" />
 							<div *ngIf="address.errors && (address.touched|| address.dirty)" class="alert text-danger">
 								<div style="font-size:15px;margin:-10px;" [hidden]="!address.errors.required">
                                Address is required
@@ -161,6 +164,7 @@
 			    
 			</div>
 		</div>
-		<div class="col-lg-6"></div>
+		<div class="col-lg-4 col-md-3"></div>
+		
 	</div>
 </div>
